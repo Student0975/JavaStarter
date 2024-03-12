@@ -16,9 +16,10 @@ public class Average {
     int b = sc.nextInt();
 
     System.out.printf("Average numbers %s and %s = %s",a,b,average(a,b));
+    sc.close();
   }
 
   private static double average(int a, int b) {
-    return (a + b)/2;
+    return (float) (a + b)/2;
   }
 }
